@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+html,
+body {
+  height: 100%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10%;
+  border-bottom: 1px solid #b2b2b2;
+  z-index: 10;
+  background-color: #fff;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+nav ul {
+  margin-left: 400px;
+}
+.first {
+  display: flex;
+  margin: 130px 120px;
+}
+.third {
+  margin-left: 150px;
+  color: #757474;
+}
+.third-1 {
+  margin-left: 150px;
+  line-height: 25px;
+  color: #757474;
+}
+.third-1 a {
+  font-size: large;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.growth {
+  background-color: aqua;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: none;
+}
+.news {
+  background-color: #ee83a1;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: none;
+}
+.paid {
+  background-color: aqua;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: none;
+}
+.psychology {
+  background-color: rgb(255, 169, 202);
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: none;
+}
+.career {
+  background-color: rgb(240, 229, 133);
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: none;
+}
+.second h2 {
+  font-size: 4vw;
+}
+.second p {
+  font-weight: lighter;
+  color: #757474;
+}
+.second strong {
+  color: #000;
+}
+.third h2 {
+  font-size: 2.2vw;
+  margin: 0%;
+  color: #000;
+}
+nav button {
+  background-color: rgb(255, 215, 16);
+  padding: 10px;
+  border-radius: 10px;
+  border-color: rgb(255, 215, 16);
+}
+.left {
+  display: block;
+  width: 30%; /* Adjust the width as needed */
+  position: fixed; /* Fixes the left side */
+  height: 100%; /* Full height */
+  padding: 20px;
+}
+
+.right {
+  display: block;
+  margin-left: 30%; /* Same width as the left side */
+  width: 75%; /* Adjust the width as needed */
+  overflow-y: auto; /* Allows vertical scrolling */
+  height: 100%; /* Full height */
+  padding: 20px;
+}
+.email-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000; /* Black border */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden;
+  width: fit-content;
+  height: 50px;
+}
+.email-container p {
+  font-size: small;
+}
+.email-input {
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  flex-grow: 1;
+  outline: none;
+}
+
+.join-button {
+  background-color: #000; /* Black background */
+  color: white; /* White text */
+  border: none;
+  padding: 20px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #333; /* Darker shade on hover */
+}
+.companies-photo {
+  height: 150px;
+}
+footer {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  padding: 150px;
+  height: 400px; /* Adjust footer height */
+  justify-content: space-between;
+}
+footer ul {
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    position: absolute;
+    width: 100%;
+    background: #000;
+    color: #ffffff;
+    left: 0;
+    top: 60px;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .first {
+    display: block;
+  }
+}

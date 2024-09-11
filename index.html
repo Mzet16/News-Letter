@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Forecast</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <label> <img src="logo.png" alt="nopicture" class="logo" /> </label>
+      <ul>
+        <li><strong>Feed</strong></li>
+        <li>Topics</li>
+        <li>Blog</li>
+        <li>About</li>
+      </ul>
+      <button>Join For $0</button>
+    </nav>
+
+    <div class="first">
+      <div class="left">
+        <div class="second">
+          <h2>Stay ahead in marketing</h2>
+          <br />
+          <p>
+            Get the <strong>weekly newsletter</strong> sending thousands of
+            marketers the latest marketing news, resources, and guides.
+          </p>
+        </div>
+        <br />
+        <div class="email-container">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="email-input"
+          />
+          <button class="join-button">Join for $0</button>
+        </div>
+        <p style="font-size: small; line-height: 30px; color: #757474">
+          Unsubscribe anytime, no hard feelings.
+        </p>
+        <br />
+        <br />
+        <p
+          style="
+            font-size: medium;
+            line-height: 30px;
+            color: #757474;
+            font-weight: bold;
+          "
+        >
+          Join marketers at leading companies
+        </p>
+        <br />
+        <img src="companies.png" class="companies-photo" />
+        <br /><br /><br />
+      </div>
+      <div class="right">
+        <div class="third">
+          <p>MONDAY</p>
+          <h2>September 11, 2024</h2>
+          <p>
+            How mini tools are better than free trials, Apple partner with
+            Google on visual search, 3 tips for better paid social ads, and
+            more.
+          </p>
+        </div>
+        <br />
+        <br />
+        <div class="third-1">
+          <a href="#">Mini tools are 10x more powerful than free trials</a
+          ><br />
+          Marketing Ideas | <button class="growth">Growth</button>
+          <p>
+            Earlier this month, a crazy simple “mini-tool” broke the internet:
+            It’s called Twitter Roast — you put a link to your Twitter/X
+            profile, it scans your tweets with AI, and boom! You get hilariously
+            acc...
+          </p>
+        </div>
+        <br />
+        <br />
+        <div class="third-1">
+          <a href="#"
+            >Apple partners with third parties, like Google, on iPhone 16’s
+            visual search</a
+          ><br />
+          TechCrunch | <button class="news">News</button>
+          <p>
+            Apple’s relationship with Google as its search partner is taking a
+            new turn with Apple’s introduction of visual search, or “Visual
+            Intelligence,” as the iPhone maker dubbed it Monday during the
+            compan...
+          </p>
+        </div>
+        <br />
+        <br />
+        <div class="third-1">
+          <a href="#">3 tips to make native-feeling paid social ads</a><br />
+          Motion | <button class="paid">Paid ads</button>
+          <p>
+            Every marketer knows that authenticity sells. It can be hard to
+            define what authenticity looks like, though. The same ad read feels
+            forced from one creator, but authentic from another. One brand hops
+            ...
+          </p>
+        </div>
+        <br />
+        <br />
+        <div class="third-1">
+          <a href="#">Why every marketer needs to understand neural synchrony</a
+          ><br />
+          Neuroscience of | <button class="psychology">Psychology</button>
+          <p>
+            Imagine you’ve just had the best French Toast of your life. It was
+            so delicious - so perfect - that you want your best friend to be
+            able to understand just how wonderful it was. Trouble is, they
+            weren...
+          </p>
+        </div>
+        <br />
+        <br />
+        <div class="third-1">
+          <a href="#">When to join a startup</a><br />
+          Dan Hock's Essays | <button class="career">career&jobs</button>
+          <p>
+            When a startup is first founded, it is nothing but risk.
+            Successfully building a company is the act of slowly eliminating
+            that risk until you have created a reliable cash flow machine. There
+            are five ...
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <img src="logo1.png" />
+
+      <div>
+        <label>Resources</label>
+        <ul>
+          <li>Newsletter</li>
+          <li>Blog</li>
+          <li>Feed</li>
+          <li>Topics</li>
+          <li>Marketing jobs</li>
+          <li>Marketing course</li>
+          <li>Submit a link</li>
+        </ul>
+      </div>
+      <div>
+        <label>Topics</label>
+        <ul>
+          <li>Copywriting</li>
+          <li>Content Marketing</li>
+          <li>Email marketing</li>
+          <li>Paid ads</li>
+          <li>SEO</li>
+          <li>Social media</li>
+          <li>Web design</li>
+        </ul>
+      </div>
+      <div>
+        <label>Popular articles</label>
+        <ul>
+          <li>How to write SEO blog posts</li>
+          <li>Saas content marketing guide</li>
+          <li>Best marketing books</li>
+          <li>Best marketing courses</li>
+          <li>Best website builders</li>
+        </ul>
+      </div>
+      <div>
+        <label>Company</label>
+        <ul>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Disclaimers</li>
+          <li>Privacy policy</li>
+          <li>Terms of use</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      window.onscroll = function () {
+        var leftSide = document.querySelector(".left");
+        var rightSide = document.querySelector(".right");
+        var footer = document.querySelector("footer");
+
+        // Get the height of the left sidebar
+        var leftSideHeight = leftSide.offsetHeight;
+
+        // Calculate the scroll position at which the left sidebar should start moving
+        var stopPosition = footer.offsetTop - leftSideHeight;
+
+        // If the user scrolls past the stop position, move the left sidebar
+        if (window.scrollY >= stopPosition) {
+          leftSide.style.position = "absolute";
+          leftSide.style.top = stopPosition + "px";
+        } else {
+          leftSide.style.position = "fixed";
+          leftSide.style.top = "150px";
+        }
+      };
+    </script>
+  </body>
+</html>
