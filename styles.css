@@ -101,6 +101,7 @@ nav button {
   padding: 10px;
   border-radius: 10px;
   border-color: rgb(255, 215, 16);
+  border: none;
 }
 .left {
   display: block;
@@ -163,9 +164,14 @@ footer {
   height: 400px; /* Adjust footer height */
   justify-content: space-between;
 }
-footer ul {
+.copyright {
+  align-items: center;
+  text-align: center;
+  padding: 25px;
 }
-
+.copyright a {
+  align-items: center;
+}
 @media only screen and (max-width: 600px) {
   nav {
     position: absolute;
