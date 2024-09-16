@@ -160,9 +160,12 @@ footer {
   display: flex;
   background-color: #333;
   color: #fff;
-  padding: 150px;
+  padding: 50px;
   height: 400px; /* Adjust footer height */
   justify-content: space-between;
+}
+footer img {
+  width: 170px;
 }
 .copyright {
   align-items: center;
@@ -174,18 +177,73 @@ footer {
 }
 @media only screen and (max-width: 600px) {
   nav {
-    position: absolute;
-    width: 100%;
-    background: #000;
-    color: #ffffff;
-    left: 0;
-    top: 60px;
-    text-align: center;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;
+    display: flex;
+    background: #fffdfd;
+    color: #000000;
+    height: 50px;
   }
+  nav ul {
+    display: flex;
+    padding: 0;
+  }
+  nav ul li {
+    display: flex;
+    margin: 10px 0;
+  }
+  nav label img {
+    width: 75px;
+    height: auto;
+  }
+
+  /* Stacking layout */
   .first {
+    display: inline;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .left {
     display: block;
+    position: absolute;
+    margin-top: 55px;
+    width: 100%;
+  }
+
+  .right {
+    display: block;
+    height: auto;
+    margin: 0;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  /* Resize headings */
+  .second h2 {
+    font-size: 6vw;
+  }
+
+  /* Hide JavaScript behavior on small screens */
+
+  /* Footer adjustments */
+  footer {
+    display: block;
+    padding: 20px;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 0pxs;
+  }
+
+  /* Adjust copyright */
+  .copyright {
+    padding: 10px;
+    height: 25px;
+  }
+  .companies-photo {
+    width: 250px;
+    height: auto;
+  }
+  footer img {
+    width: 65px;
+    height: auto;
   }
 }
