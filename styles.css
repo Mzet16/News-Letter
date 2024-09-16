@@ -197,9 +197,10 @@ footer img {
 
   /* Stacking layout */
   .first {
-    display: inline;
+    display: inherit;
     margin: 0;
     padding: 10px;
+    justify-content: left;
   }
 
   .left {
@@ -216,7 +217,14 @@ footer img {
     width: 100%;
     margin-left: 0%;
   }
-
+  .third {
+    margin: 0%;
+    text-align: justify;
+  }
+  .third-1 {
+    margin: 0%;
+    text-align: justify;
+  }
   /* Resize headings */
   .second h2 {
     font-size: 6vw;
